@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#results, .favorites-section, .artists-section, .playlists-section {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.song, .favorite, .artist, .playlist {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.song:hover, .favorite:hover, .artist:hover, .playlist:hover {
+    transform: scale(1.05);
+}
+
+.song img, .artist img, .playlist img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.song h3, .favorite h3, .artist h3, .playlist h3 {
+    margin: 10px 0 5px;
+}
+
+.song p, .favorite p, .artist p, .playlist p {
+    margin: 5px 0;
+}
+
+.song audio, .favorite audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#playlist-name {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#create-playlist-button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
